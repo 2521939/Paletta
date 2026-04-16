@@ -13,7 +13,7 @@
 
 * Acesse a estrutura visual:
 
-     [**CLIQUE AQUI - Estrutura Visual**](https://2521939.github.io/PMI/)
+     [**CLIQUE AQUI - Estrutura Visual**](https://2521939.github.io/Paletta/)
 
 * Acesse o relatório:
 
