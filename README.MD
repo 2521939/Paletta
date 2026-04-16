@@ -4,7 +4,7 @@
  
 > **Oi, tudo bem? Seja bem-vindo(a)!**
 > 
-> Aqui esta o desenvolvimento do Sprint 1 - Pré-Projeto (N1)
+> Aqui esta o desenvolvimento do Sprint 1 - Pré-Projeto (N1) <br>
 > Desenvolvemos o relatório, repositório e a estrutura visual do nosso site.
  
 ---
@@ -13,10 +13,10 @@
 
 * Acesse a estrutura visual:
 
-     [**CLIQUE AQUI - Landing Page**](https://2521939.github.io/PMI/)
+     [**CLIQUE AQUI - Estrutura Visual**](https://2521939.github.io/PMI/)
 
 * Acesse o relatório:
 
-     [**CLIQUE AQUI - Protótipo de Telas**](https://docs.google.com/document/d/1mM9arc_jvXc2puXrKPLAAtEcJpDkObr0/edit)
+     [**CLIQUE AQUI - Relatório**](https://docs.google.com/document/d/1mM9arc_jvXc2puXrKPLAAtEcJpDkObr0/edit)
 
 ---
