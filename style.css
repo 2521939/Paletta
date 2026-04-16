@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Parte do Cabeçalho */
+.cont-cabecalho {
+    background-color: powderblue;
+    padding: 10px;
+    height: 15vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+.item-cabecalho {
+    background-color: blueviolet;
+}
+
+.logo-cabecalho {
+    width: 25%;
+    height: 100%;
+    margin-right: 65%;
+}
+
+.login-cabecalho {
+    margin-right: 20px;
+    height: 25%;
+}
+
+.register-cabecalho {
+    height: 25%;
+}
+
+/* Frase Principal */
+.cont-frasep {
+    background-color: bisque;
+    height: 13vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-frasep {
+    background-color: brown;
+    margin-bottom: 15px;
+    height: 40%;
+    width: 20%;
+
+    align-self: flex-end;
+}
+
+/* Destaques Semanais */
+.cont-destaquesema {
+    background-color: coral;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-destaquesema {
+    background-color: grey;
+    border: 1px solid black;
+    height: 98%;
+    width: 50%;
+}
+
+/* Botão Explorar */
+.cont-botexp {
+    background-color: chartreuse;
+    height: 22vh;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-botexp {
+    background-color: cornflowerblue;
+    height: 25%;
+    width: 10%;
+}
