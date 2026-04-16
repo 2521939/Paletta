@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #DEEDEF;
+    --cor-destaque: #85C5CE;
+    --cor-destaque-footer: #BEDCE0;
+    --cor-fundo: #FFFFFF;
+}
+
+a {
+  color: black;            /* Change to your desired color */
+  text-decoration: none;   /* This also removes the underline */
+}
+
+
+/* Parte do Cabeçalho */
+.cont-cabecalho {
+    background-color: var(--cor-principal);
+    padding: 10px;
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-cabecalho {
+    text-align: center;
+}
+
+.logo-cabecalho {
+    width: 250px;     /* Não da de usar % aqui por que não funciona pra usar um link */
+    height: 90px;     /* Aqui também não realmente complica */
+    margin-right: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.login-cabecalho {
+    margin-right: 20px;
+    height: 25%;
+}
+
+.register-cabecalho {
+    height: 25%;
+}
+
+/* Frase Principal */
+.cont-frasep {
+    height: 13vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-frasep {
+    text-align: center;
+    margin-bottom: 15px;
+    height: 40%;
+    width: 20%;
+
+    align-self: flex-end;
+}
+
+/* Destaques Semanais */
+.cont-destaquesema {
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-destaquesema {
+    background-color: lightgray;
+    border-radius: 50px;
+    height: 98%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Botão Explorar */
+.cont-botexp {
+    height: 210px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-botexp {
+
+    background-color: var(--cor-destaque);
+    height: 25%;
+    width: 10%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-footer{
+    background-color: var(--cor-destaque-footer);
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.item-footer{
+    margin-right: 50px;
+}
+
+ /* Parte Sobre */
+
+.cont-sobre {
+    background-color: var(--cor-fundo);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-sobre {
+    text-align: center;
+    margin: 30px;
+    width: 450px;
+}
