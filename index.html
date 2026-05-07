@@ -11,11 +11,15 @@
     <!-- Parte do Cabeçalho -->
      <header class="cont-cabecalho">
         <h1 class="item-cabecalho logo-cabecalho">Paletta</h1>
-        <p class="item-cabecalho login-cabecalho">Login</p>
+        <button class="item-cabecalho login-cabecalho" id="openBtn">Login</button>
         <p class="item-cabecalho register-cabecalho"><a href="register.html">Register</a></p>
      </header>
          <!-- Frase "Principal" + Destaques Semanais -->
      <main>
+    <dialog id="myModal">
+    <p>Teste de Modal para Login!</p>
+    <button id="closeBtn">Close</button>
+    </dialog>
 
         <!-- Frase Principal -->
             <section class="cont-frasep">
@@ -23,7 +27,18 @@
             </section>
       <!-- Destaques Semanais -->
        <section class="cont-destaquesema">
-            <p class="item-destaquesema">Inserir Destaques Semanais</p>
+            <section class="item-destaquesema">Inserir Destaques Semanais
+                <p class="slide">1</p>
+                <p class="slide">2</p>
+                <p class="slide">3</p>
+                <p class="slide">4</p>
+                <p class="slide">5</p>
+                <p class="slide">6</p>
+                <p class="slide">7</p>
+                <p class="slide">8</p>
+                <p class="slide">9</p>
+            </section>
+
        </section>
 
        <!-- Botão de Explorar indo para os Posts -->
@@ -35,5 +50,6 @@
         <a class="item-footer" href="sobre.html">Sobre</a>
         <a class="item-footer" href="mailto:umEmailQueNaoExiste@umEmailQueNaoExiste.com">Contate-nos</a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
