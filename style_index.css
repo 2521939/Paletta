@@ -1,0 +1,56 @@
+/* Frase Principal */
+.cont-frasep {
+    height: 13vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-frasep {
+    text-align: center;
+    margin-bottom: 15px;
+    height: 40%;
+    width: 20%;
+
+    align-self: flex-end;
+}
+
+/* Destaques Semanais */
+.cont-destaquesema {
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-destaquesema {
+    background-color: lightgray;
+    border-radius: 50px;
+    height: 98%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Botão Explorar */
+.cont-botexp {
+    height: 210px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item-botexp {
+
+    background-color: var(--cor-destaque);
+    height: 25%;
+    width: 10%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
