@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style_register.css">
+    <link rel="stylesheet" href="style.css">
     <title>Paletta - Register</title>
 </head>
 <body>
-    
+    <main>
+    <header class="cont-cabecalho">
+        <a href="index.html">
+        <h1 class="item-cabecalho logo-cabecalho">Paletta</h1>
+        </a>
+     </header>
+        
+        <div class="signup-card">
+                <h2>Nova Conta</h2>
+                <p>Preencha os campos para se registrar.</p>
+
+            <section class="fields-container">
+                <div class="input-block">
+                    <label for="user-name">Nome</label>
+                    <input type="text" id="user-name" placeholder="Seu nome completo">
+                </div>
+
+                <div class="input-block">
+                    <label for="user-email">E-mail</label>
+                    <input type="email" id="user-email" placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="input-block">
+                    <label for="user-pass">Senha</label>
+                    <input type="password" id="user-pass" placeholder="Crie uma senha forte">
+                </div>
+            </section>
+
+            <div class="actions">
+                <button type="button" class="btn-send">Criar Conta</button>
+            </div>
+
+            <footer class="login-link">
+                <p>Já possui cadastro? <a href="login.html">Entrar</a></p>
+            </footer>
+        </div>
+
+    </main>
 </body>
 </html>
