@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_index.css">
+        <script src="script.js" defer></script>
     <title>Paletta</title>
 </head>
 <body>
     <!-- Parte do Cabeçalho -->
      <header class="cont-cabecalho">
         <h1 class="item-cabecalho logo-cabecalho">Paletta</h1>
-        <button class="item-cabecalho login-cabecalho" id="openBtn">Login</button>
+        <button class="item-cabecalho login-cabecalho botaocomop" id="abrirmodal">Login</button>
         <p class="item-cabecalho register-cabecalho"><a href="register.html">Register</a></p>
      </header>
-         <!-- Frase "Principal" + Destaques Semanais -->
+
      <main>
-    <dialog id="myModal">
-    <p>Teste de Modal para Login!</p>
-    <button id="closeBtn">Close</button>
+    
+    <!-- Campo de Login (Modal) -->
+<dialog id="modalLogin" class="modal-de-login">
+    <section class="header-modal-login" >
+    <h2 class="login-header-texto">Login</h2>
+    <button id="fecharmodalbtn" class="fecharbtn">X</button>
+    </section>
+
+    <section class="campos">
+    <section class="campo-nome-email">
+        <label for="username">Usuário / Email: </label>
+        <input type="text" id="username" placeholder="Nome ou email">
+    </section>  
+
+    <section class="campo-senha">
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" placeholder="Digite sua Senha">
+        <section class="container-botao-entrar-teste">
+        <button id="entrarbtn" class="entrar-botao" onclick="funcaomodalfechar()">Entrar</button>
+        </section>
+    </section>
+    </section>
     </dialog>
 
+        <!-- Frase "Principal" + Destaques Semanais -->
         <!-- Frase Principal -->
             <section class="cont-frasep">
             <h1 class="item-frasep">Destaques</h1>
@@ -50,6 +71,5 @@
         <a class="item-footer" href="sobre.html">Sobre</a>
         <a class="item-footer" href="mailto:umEmailQueNaoExiste@umEmailQueNaoExiste.com">Contate-nos</a>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
