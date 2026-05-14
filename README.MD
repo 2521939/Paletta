@@ -8,3 +8,7 @@
 > Desenvolvemos o relatório e a criação de novas páginas implementando o JavaScript.
  
 ---
+
+## ➡️ Acesse nosso Protótipo de Tela!
+
+[**CLIQUE AQUI**](https://2521939.github.io/Paletta/)
