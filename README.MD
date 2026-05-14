@@ -1,10 +1,16 @@
 # 🎨 Paletta
  
-![Status](https://img.shields.io/badge/Sprint%202-GitHub%20%2F%20Documentação%20%2F%20Estrutura%20Visual-blueviolet)
+![Status](https://img.shields.io/badge/Sprint%201-GitHub%20%2F%20Documentação%20%2F%20Estrutura%20Visual-blueviolet)
  
 > **Oi, tudo bem? Seja bem-vindo(a)!**
 > 
-> Aqui esta o desenvolvimento do Sprint 2 - Pré-Projeto (N2) <br>
-> Desenvolvemos o relatório e a criação de novas páginas implementando o JavaScript.
+> Aqui esta o desenvolvimento do Sprint 2 -  Relatório de Evolução (N2) <br>
+> Desenvolvemos o relatório, repositório e a estrutura visual do nosso site.
  
 ---
+
+## ➡️ Segue o acesso ao nosso Sprint 1
+
+* Acesse a estrutura visual:
+
+     [**CLIQUE AQUI - Estrutura Visual**](https://2521939.github.io/Paletta/)
