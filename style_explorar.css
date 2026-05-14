@@ -1,0 +1,34 @@
+.container-posts{
+display: flex;
+background-color: lightgray;
+width: 90rem;
+height: 100vh;  /* Vh para "esticar" junto com os posts dentro */
+flex-wrap: wrap;
+gap: 2rem;
+margin: auto;
+padding: 1rem;
+justify-content: center;
+}
+
+
+.post-thumb{
+margin-top: 2rem;
+border-radius: 2rem;
+display: flex;
+border-style: solid;
+border-color: #555;
+border-width: 0.1rem;
+background-color: var(--cor-fundo);
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+width: 15rem;
+height: 15rem;
+justify-content: center;
+align-items: end;
+padding: 2rem;
+cursor: pointer;
+}
+
+.post-thumb:hover{
+    border-color: ;
+}
+

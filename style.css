@@ -2,19 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
     --cor-principal: #DEEDEF;
     --cor-destaque: #85C5CE;
+    --cor-destaque-escura: #5c99a1; 
     --cor-destaque-footer: #BEDCE0;
     --cor-fundo: #FFFFFF;
+    --cor-preta: #000000;
 }
 
 a {
   color: black;            /* Change to your desired color */
   text-decoration: none;   /* This also removes the underline */
 }
+
+/* Faz com que um botão tenha aperencia de um <p>*/
+.botaocomop{
+background: none;
+border: none;
+font: inherit;
+text-align: inherit;
+color: inherit;
+cursor: pointer;
+}
+
 
 
 /* Parte do Cabeçalho @ */
@@ -36,12 +50,13 @@ a {
 .logo-cabecalho {
     width: 250px;     /* Não da de usar % aqui por que não funciona pra usar um link */
     height: 90px;     /* Aqui também não realmente complica */
-    margin-right: 75%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .login-cabecalho {
+    margin-left: 95rem;
     margin-right: 20px;
     height: 25%;
 }

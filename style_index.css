@@ -32,25 +32,40 @@
 .item-destaquesema {
     background-color: lightgray;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 50px;
-    height: 98%;
-    width: 50%;
+    border-radius: 2.5rem;
+    height: 30rem;
+    width: 79rem;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    gap: 1rem;
     align-items: center;
-    overflow: hidden;
-    transition: 0.5s ease-in-out
+    transition: 0.5s ease;
+    overflow-x: auto;
+    scrollbar-width: none; /* Faz a barra de scroll do elemento sumir, isso faz com que funciona no firefox */
 }
+
+
+.item-destaquesema::-webkit-scrollbar {
+display: none; /* Faz a barra sumir em quase tudo menos firefox*/
+}
+
 .slide{
     background-color: white;
-    border-radius: 50px;
-    margin: 5px;
-    height: 85%;
+    border-radius: 2rem;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 50%
+    flex: 0 0 25rem; /* aqui que fica o width */
+    cursor: pointer;
 }
+
+/* Hover é divertido! */
+.slide:hover {
+    border-color: var(--cor-destaque);
+    border-style: solid;
+}
+
 
 /* Botão Explorar */
 .cont-botexp {
@@ -62,24 +77,25 @@
 }
 
 .item-botexp {
-
     background-color: var(--cor-destaque);
     height: 25%;
     width: 10%;
     border-radius: 50px;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* Faz com que um botão tenha aperencia de um <p>*/
-.botaocomop{
-background: none;
-border: none;
-font: inherit;
-text-align: inherit;
-color: inherit;
-cursor: pointer;
+
+.item-botexp:hover {
+    background-color: var(--cor-destaque-escura);
 }
+
+.setas {
+font-size: 4rem;
+padding: 1.5rem;
+}
+
 
 /* Parte que define aperencia do modal ou o dialogue, do login!*/
 .modal-de-login{
@@ -111,7 +127,7 @@ font-size: large;
 margin-left: auto;
 margin-right: 5%;
 border: none;
-color: black;
+color: var(--cor-preta);
 background: none;
 cursor: pointer;
 }

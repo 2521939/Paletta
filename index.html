@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_index.css">
-        <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Paletta</title>
 </head>
 <body>
@@ -18,26 +18,26 @@
 
      <main>
     
-    <!-- Campo de Login (Modal) -->
+<!-- Campo de Login (Modal) -->
 <dialog id="modalLogin" class="modal-de-login">
     <section class="header-modal-login" >
-    <h2 class="login-header-texto">Login</h2>
-    <button id="fecharmodalbtn" class="fecharbtn">X</button>
+        <h2 class="login-header-texto">Login</h2>
+        <button id="fecharmodalbtn" class="fecharbtn">X</button>
     </section>
 
     <section class="campos">
-    <section class="campo-nome-email">
-        <label for="username">Usuário / Email: </label>
-        <input type="text" id="username" placeholder="Nome ou email">
-    </section>  
+        <section class="campo-nome-email">
+            <label for="username">Usuário / Email: </label>
+            <input type="text" id="username" placeholder="Nome ou email">
+        </section>  
 
-    <section class="campo-senha">
-        <label for="senha">Senha: </label>
-        <input type="password" id="senha" placeholder="Digite sua Senha">
-        <section class="container-botao-entrar-teste">
+        <section class="campo-senha">
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" placeholder="Digite sua Senha">
+            <section class="container-botao-entrar-teste">
         <button id="entrarbtn" class="entrar-botao" onclick="funcaomodalfechar()">Entrar</button>
+            </section>
         </section>
-    </section>
     </section>
     </dialog>
 
@@ -48,7 +48,9 @@
             </section>
       <!-- Destaques Semanais -->
        <section class="cont-destaquesema">
-            <section class="item-destaquesema">Inserir Destaques Semanais
+            <button onclick="moveresquerda()" id="botaoesquerda" class="setas botaocomop">&lt</button>
+            
+            <section id="janelas-slide" class="item-destaquesema">
                 <p class="slide">1</p>
                 <p class="slide">2</p>
                 <p class="slide">3</p>
@@ -59,12 +61,12 @@
                 <p class="slide">8</p>
                 <p class="slide">9</p>
             </section>
-
+            <button onclick="moverdireita()" id="botaodireita" class="setas botaocomop">&gt</button>
        </section>
 
        <!-- Botão de Explorar indo para os Posts -->
         <section class="cont-botexp">
-            <p class="item-botexp">Explorar</p>
+            <a class="item-botexp" href="explorar.html">Explorar</a>
         </section>
     </main>
     <footer class="cont-footer">
