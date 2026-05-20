@@ -5,6 +5,6 @@
 > **⚙️ Em desenvolvimento...**
 > 
 > Nosso projeto está em desenvolvimento... <br>
-> Por enquanto acesse as branches para acessar seu conteúdo.
+> Por enquanto acesse as branches para acessar seu conteúdo!
  
 ---
