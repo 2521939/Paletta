@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_criarpost.css">
     <script src="script.js" defer></script>
+   <script src="api.js" defer></script>
     <title>Paletta - Criação de Post</title>
 </head>
 <body>
@@ -21,20 +22,20 @@
         <h1>Crie seu post!</h1>
 
         <h2>Titulo do seu Post:</h2>
-        <label for="titulo-post">Titulo: </label>
-        <input type="text" id="titulo-post" name="titulo-post" placeholder="Escreva sobre o que se trata o seu pedido, um resumo curto do que ou quem procura">
+        <label for="titulo">Titulo: </label>
+        <input type="text" id="titulo" name="titulo" placeholder="Escreva sobre o que se trata o seu pedido, um resumo curto do que ou quem procura">
 
         <h2>Descrição:</h2>
         <section>
-        <label required minlength="20" maxlenght="250" for="descricao-post">Descrição: </label>
-        <input type="text" id="descricao-post" name="descricao-post" placeholder="De uma descrição para seu post!">
+        <label required minlength="20" maxlenght="250" for="descricao">Descrição: </label>
+        <input type="text" id="descricao" name="descricao" placeholder="De uma descrição para seu post!">
         </section>
 
         <h2>Especificações:</h2>
 
         <section>
-        <label for="resolucao-post">Tamanho: </label>
-        <select name="resolucao-post" id="resolucao-post">
+        <label for="resolucao">Tamanho: </label>
+        <select name="resolucao" id="resolucao">
         <option value="3840x2160">Computador/Monitor (3840 x 2160)</option>
         <option value="2560x1440">Computador/Monitor (2560 x 1440)</option>
         <option value="1920x1080">Computador/Monitor (1920 x 1080)</option>
@@ -48,8 +49,8 @@
         </section>
 
         <section>
-        <label for="imagem-post">Imagem de referencia: </label>
-        <input type="file" id="imagem-post" name="imagem-post" placeholder="Insira sua imagem">
+        <label for="imagempos">Imagem de referencia: </label>
+        <input type="file" id="imagempos" name="imagempos" placeholder="Insira sua imagem">
         </section>
 
         <h2>Informações de Contato:</h2>
@@ -59,9 +60,9 @@
         <input type="text" id="comuniOutros" name="comuniOutros" placeholder="Insira seu meio de comunicação">
         </section>
 
-        <label for="id">Id para testes</label>
-        <input type="text" name="id" id="id">
-        <button onclick="gravar()">Criar Post</button>
+        <label for="idPos">Id para testes</label>
+        <input type="text" name="idPos" id="idPos">
+        <button onclick="gravar();">Criar Post</button>
      </section>
 </body>
 </html>
