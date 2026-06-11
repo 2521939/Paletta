@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style_explorar.css">
     <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
     <title>Paletta - Explorar</title>
 </head>
-<body>
+<body onload="carregarDados();">
     <!-- Parte do Cabeçalho -->
      <header class="cont-cabecalho">
         <a href="index.html">
@@ -17,20 +18,39 @@
         <button class="item-cabecalho login-cabecalho botaocomop" id="abrirmodal">Login</button>
         <p class="item-cabecalho register-cabecalho"><a href="register.html">Register</a></p>
      </header>
-     <section class="container-posts">
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
-        <section class="post-thumb">Nome Post</section>
+     <section id="localdepost" class="container-posts">
+        <section class="post-thumb" onclick="abrirpost();">Nome Post</section>
+     </section>
+    
+
+    <dialog id="modalPost" class="modal-de-post">
+    
+    <section>
+        <h1 id="titulo-post">N/A</h2>
+        <button id="fecharbtnpost" class="fecharbtn" onclick="fecharpost();">X</button>
+    </section>
+
+    <section class="campos">
+        <section class="campo-descricao">
+            <h2>Descrição:</h2>
+            <p id="descricao">Descrição: </p>
+        </section>  
+
+        <section class="campo-especificacao">
+            <p id="tamanho">Tamanho: </p>
+        </section>
+
+        <section>
+            <h2>Informações de Contato:</h2>
+            <p id="contato">Contato: </p>
+        </section>
+
+    </section>
+    </dialog>
+
+
+     <section class="icone-novo-post">
+        <a class="botao-novo-post" href="criacaopost.html">+</a>
      </section>
 </body>
 </html>

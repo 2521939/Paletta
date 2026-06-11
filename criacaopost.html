@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_criarpost.css">
+    <script src="script.js" defer></script>
+    <title>Paletta - Criação de Post</title>
+</head>
+<body>
+    <!-- Parte do Cabeçalho -->
+     <header class="cont-cabecalho">
+        <a href="index.html">
+        <h1 class="item-cabecalho logo-cabecalho">Paletta</h1></a>
+        <button class="item-cabecalho login-cabecalho botaocomop" id="abrirmodal">Login</button>
+        <p class="item-cabecalho register-cabecalho"><a href="register.html">Register</a></p>
+     </header>
+     <section class="container-criacao">
+        <h1>Crie seu post!</h1>
+
+        <h2>Titulo do seu Post:</h2>
+        <label for="titulo-post">Titulo: </label>
+        <input type="text" id="titulo-post" name="titulo-post" placeholder="Escreva sobre o que se trata o seu pedido, um resumo curto do que ou quem procura">
+
+        <h2>Descrição:</h2>
+        <section>
+        <label required minlength="20" maxlenght="250" for="descricao-post">Descrição: </label>
+        <input type="text" id="descricao-post" name="descricao-post" placeholder="De uma descrição para seu post!">
+        </section>
+
+        <h2>Especificações:</h2>
+
+        <section>
+        <label for="resolucao-post">Tamanho: </label>
+        <select name="resolucao-post" id="resolucao-post">
+        <option value="3840x2160">Computador/Monitor (3840 x 2160)</option>
+        <option value="2560x1440">Computador/Monitor (2560 x 1440)</option>
+        <option value="1920x1080">Computador/Monitor (1920 x 1080)</option>
+        <option value="1366x720">Computador/Monitor (1366 x 720)</option>
+        <option value="1440x3200">SmartPhone (1440 x 3200)</option>
+        <option value="1170x2532">SmartPhone (1170 x 2532)</option>
+        <option value="1080x2400">SmartPhone (1080 x 2400)</option>
+        <option value="720x1600">SmartPhone (720 x 1600)</option>
+        <option value="resOutro">Outro (Detalhar na Descrição)</option>
+        </select>
+        </section>
+
+        <section>
+        <label for="imagem-post">Imagem de referencia: </label>
+        <input type="file" id="imagem-post" name="imagem-post" placeholder="Insira sua imagem">
+        </section>
+
+        <h2>Informações de Contato:</h2>
+
+        <section>
+        <label for="comuniOutros">Meio de Comunicação: </label>
+        <input type="text" id="comuniOutros" name="comuniOutros" placeholder="Insira seu meio de comunicação">
+        </section>
+
+        <label for="id">Id para testes</label>
+        <input type="text" name="id" id="id">
+        <button onclick="gravar()">Criar Post</button>
+     </section>
+</body>
+</html>

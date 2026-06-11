@@ -10,15 +10,16 @@
 
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .item-frasep {
     text-align: center;
-    margin-bottom: 15px;
-    height: 40%;
-    width: 20%;
-    font-size: 2.5rem;
+    margin-bottom: 0.37em;
+    height: 1.7em;
+    font-size: 2.5em;
     align-self: flex-end;
+    flex-shrink: 0;
 }
 
 /* Destaques Semanais */
@@ -27,20 +28,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .item-destaquesema {
     background-color: lightgray;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 2.5rem;
-    height: 30rem;
-    width: 79rem;
-    padding: 1rem;
+    border-radius: 2.5em;
+    height: 30em;
+    width: 79em;
+    padding: 1em;
     display: flex;
-    gap: 1rem;
+    gap: 1em;
     align-items: center;
     transition: 0.5s ease;
     overflow-x: auto;
+    flex-shrink: 0;
     scrollbar-width: none; /* Faz a barra de scroll do elemento sumir, isso faz com que funciona no firefox */
 }
 
@@ -48,15 +51,16 @@
 .item-destaquesema::-webkit-scrollbar {
 display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 }
-
+/**/
 .slide{
+    flex-shrink: 0;
     background-color: white;
-    border-radius: 2rem;
-    height: 25rem;
+    border-radius: 2em;
+    height: 25em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 25rem; /* aqui que fica o width */
+    flex: 0 0 25em; /* aqui que fica o width */
     cursor: pointer;
 }
 
@@ -69,8 +73,8 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 
 /* Botão Explorar */
 .cont-botexp {
-    height: 210px;
-    padding: 10px;
+    height: 1em;
+    padding: 0.25em;
 
     display: flex;
     justify-content: center;
@@ -78,10 +82,10 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 
 .item-botexp {
     background-color: var(--cor-destaque);
-    height: 25%;
-    width: 10%;
+    height: 4em;
+    width: 2em;
     border-radius: 50px;
-    margin-top: 2rem;
+    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,10 +94,9 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 .item-botexp:hover {
     background-color: var(--cor-destaque-escura);
 }
-
+/**/
 .setas {
-font-size: 4rem;
-padding: 1.5rem;
+font-size: 4em;
 }
 
 
@@ -110,7 +113,7 @@ height: 65%;
 .header-modal-login {
 background-color: var(--cor-principal);
 width: 100%;
-height: 3.5rem;
+height: 3.5em;
 display: flex;
 align-items: center;
 }
@@ -121,8 +124,8 @@ margin-left: 45%;
 }
 
 .fecharbtn{
-width: 2.5rem;
-height: 2.5rem;
+width: 2.5em;
+height: 2.5em;
 font-size: large;
 margin-left: auto;
 margin-right: 5%;
@@ -133,19 +136,19 @@ cursor: pointer;
 }
 
 .campos{
-margin: 2rem;
+margin: 2em;
 }
 
 .campo-nome-email{
-margin-top: 2.5rem;
-margin-bottom: 5rem;
+margin-top: 2.5em;
+margin-bottom: 5em;
 text-align: center;
 display: flex;
 flex-direction: column;
 }
 
 .campo-senha{
-margin-bottom: 5rem;
+margin-bottom: 5em;
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -153,21 +156,21 @@ justify-content: center;
 }
 
 label{
-font-size: 1.5rem;
+font-size: 1.5em;
 color: #555;
 font-weight: bold;
 }
 
 input{
-margin-top: 2rem;
+margin-top: 2em;
 outline: none;
 border-style:solid;
 border: 1px solid lightgray;
-border-radius: 20rem;
-padding: 1rem;
-height: 2rem;
+border-radius: 20em;
+padding: 1em;
+height: 2em;
 width: 100%;
-font-size: 1rem;
+font-size: 1em;
 }
 
 .container-botao-entrar-teste{
@@ -175,11 +178,11 @@ font-size: 1rem;
 }
 
 .entrar-botao {
-margin-top: 5rem;
-height: 2.5rem;
-width: 10rem;
-border-radius: 20rem;
-font-size: 1rem;
+margin-top: 5em;
+height: 2.5em;
+width: 10em;
+border-radius: 20em;
+font-size: 1em;
 border: none;
 cursor: pointer;
 font-weight: bold;

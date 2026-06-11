@@ -1,34 +1,56 @@
 .container-posts{
 display: flex;
 background-color: lightgray;
-width: 90rem;
+width: 150em;
 height: 100vh;  /* Vh para "esticar" junto com os posts dentro */
 flex-wrap: wrap;
-gap: 2rem;
+gap: 1em;
 margin: auto;
-padding: 1rem;
+padding: 1em;
 justify-content: center;
 }
 
 
 .post-thumb{
-margin-top: 2rem;
+margin-top: 2em;
 border-radius: 2rem;
 display: flex;
 border-style: solid;
-border-color: #555;
-border-width: 0.1rem;
+border-color: #c7c7c7;
+border-width: 0.1em;
 background-color: var(--cor-fundo);
 box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 width: 15rem;
 height: 15rem;
 justify-content: center;
 align-items: end;
-padding: 2rem;
+padding: 1rem;
+text-overflow: ellipsis;
 cursor: pointer;
 }
 
 .post-thumb:hover{
-    border-color: ;
+    border: 0.1em solid black;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.39);
 }
 
+
+.icone-novo-post{
+    background-color: var(--cor-destaque);
+    display: flex;
+    border-radius: 100em;
+    width: 1.5em;
+    height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: bold;
+    
+}
+
+.botao-novo-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-fundo);
+}
