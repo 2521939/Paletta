@@ -1,16 +1,17 @@
 # 🎨 Paletta
  
-![Status](https://img.shields.io/badge/Sprint%201-GitHub%20%2F%20Documentação%20%2F%20Estrutura%20Visual-blueviolet)
+![Status](https://img.shields.io/badge/Sprint%203-BackEnd%20%2F%20FrontEnd%20%2F%20Banco%20de%20Dados-blueviolet)
  
 > **Oi, tudo bem? Seja bem-vindo(a)!**
 > 
-> Aqui esta o desenvolvimento do Sprint 2 -  Relatório de Evolução (N2) <br>
-> Desenvolvemos o relatório, repositório e a estrutura visual do nosso site.
- 
+> Aqui esta o desenvolvimento do Sprint 3 <br>
+> Desenvolvemos o BackEnd, FrontEnd e Banco de Dados e integramos tudo. <br> 
 ---
 
-## ➡️ Segue o acesso ao nosso Sprint 1
+## 🛠️ Ferramentas que utilizamos:
 
-* Acesse a estrutura visual:
+- JavaScript
+- Node + npm + Express + Pg + CORS
+- Postgre SQL
 
-     [**CLIQUE AQUI - Estrutura Visual**](https://2521939.github.io/Paletta/)
+> Para rodar a aplicação é necessário o Node, uma IDE, o Postgres e o Banco de Dados.
