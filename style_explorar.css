@@ -1,14 +1,17 @@
 .container-posts{
 display: flex;
-background-color: lightgray;
-width: 150em;
-height: 100vh;  /* Vh para "esticar" junto com os posts dentro */
+background-color: var(--cor-fundo);
+width: 80%;
+min-height: 100vh;  /* Vh para "esticar" junto com os posts dentro */
+overflow-y: auto;
 flex-wrap: wrap;
 gap: 1em;
 margin: auto;
 padding: 1em;
 justify-content: center;
+border-inline: 0.1em solid lightgray;
 }
+
 
 
 .post-thumb{
@@ -38,19 +41,124 @@ cursor: pointer;
 .icone-novo-post{
     background-color: var(--cor-destaque);
     display: flex;
-    border-radius: 100em;
-    width: 1.5em;
-    height: 1.5em;
     justify-content: center;
     align-items: center;
-    font-size: 5em;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
     font-weight: bold;
-    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--cor-fundo);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.39);
+    transition: background-color 00.5s ease, color 0.5s ease;
+}
+
+.icone-novo-post:hover{
+    background-color: var(--cor-fundo);
+    color: var(--cor-destaque);
 }
 
 .botao-novo-post{
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: var(--cor-fundo);
+    align-items:center;
+    font-size: 2.5rem; 
+    text-decoration: none;
+    line-height: 4rem;
 }
+
+
+.modal-de-post{
+    min-height: 20rem;
+    min-width: 30rem;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+    border: none;
+
+}
+
+dialog::backdrop {
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-post{
+    padding: 1rem;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+}
+
+.fecharbtn{
+    border: none;
+    color: black;
+    background-color: var(--cor-fundo);
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 100%;
+    margin-right: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.campos{
+    padding: 2rem;
+}
+
+.campo-descricao{
+    margin-bottom: 3rem;
+}
+.campo-especificacao{
+    margin-bottom: 3rem;
+}
+
+.campo-contato{
+    margin-bottom: 4rem;
+}
+
+.botoes-crud{
+    margin-left: 60%;
+}
+
+.atualizar{
+    border: none;
+    background-color: lightgray;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50rem;
+    color: black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.39);
+    transition: background-color 00.5s ease, color 0.5s ease;
+}
+
+.atualizar:hover{
+    background-color: var(--cor-destaque);
+    color: black;
+    transition: background-color 00.5s ease, color 0.5s ease;
+}
+
+.deletar{
+    border: none;
+    background-color: lightgray;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50rem;
+    color: black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.39);
+    transition: background-color 00.5s ease, color 0.5s ease;
+}
+
+.deletar:hover{
+    background-color: red;
+    color: black;
+    transition: background-color 00.5s ease, color 0.5s ease;
+}
+

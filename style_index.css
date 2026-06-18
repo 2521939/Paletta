@@ -24,26 +24,28 @@
 
 /* Destaques Semanais */
 .cont-destaquesema {
-    height: 50vh;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .item-destaquesema {
     background-color: lightgray;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 2.5em;
-    height: 30em;
-    width: 79em;
+    height: 90%;
+    width: 34rem;
     padding: 1em;
     display: flex;
     gap: 1em;
     align-items: center;
     transition: 0.5s ease;
     overflow-x: auto;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    flex-grow: 0.5;
     scrollbar-width: none; /* Faz a barra de scroll do elemento sumir, isso faz com que funciona no firefox */
 }
 
@@ -54,13 +56,14 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 /**/
 .slide{
     flex-shrink: 0;
+    flex-grow: 1;
+    width: 32.1%;
+    height: 100%;
     background-color: white;
     border-radius: 2em;
-    height: 25em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 25em; /* aqui que fica o width */
     cursor: pointer;
 }
 
@@ -69,6 +72,17 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
     border-color: var(--cor-destaque);
     border-style: solid;
 }
+
+.main-area {
+flex: 1;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 
 /* Botão Explorar */
@@ -83,9 +97,8 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 .item-botexp {
     background-color: var(--cor-destaque);
     height: 4em;
-    width: 2em;
+    width: 8em;
     border-radius: 50px;
-    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +110,7 @@ display: none; /* Faz a barra sumir em quase tudo menos firefox*/
 /**/
 .setas {
 font-size: 4em;
+margin: 1rem;
 }
 
 

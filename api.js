@@ -5,30 +5,11 @@ const headers = {
     'Content-Type': 'application/json; charset=utf-8'                            
 };
 const modalpost = document.getElementById('modalPost')
-const fecharbtnpost = document.getElementById(fecharbtnpost)
+const fecharbtnpost = document.getElementById('fecharbtnpost');
 
 
 function fecharpost(){
  modalpost.close();
-};
-
-window.onload = function() {
-    let dadosDoPost = localStorage.getItem('postParaEditar');
-
-    if (dadosDoPost) {
-        const post = JSON.parse(dadosDoPost);
-
-
-        document.getElementById('idPos').value = post.idpos;
-        document.getElementById('idPos').disabled = true;
-        
-        document.getElementById('titulo').value = post.titulo || "";
-        document.getElementById('descricao').value = post.descricao || "";
-        document.getElementById('resolucao').value = post.resolucao || "";
-        document.getElementById('comuniOutros').value = post.comunioutros || "";
-
-        localStorage.removeItem('postParaEditar');
-    }
 };
 
 async function carregarDados() {
@@ -94,15 +75,15 @@ async function gravar() {
     });
     // Se o campo ID estiver desabilitado, é porque estávamos alterando,
     // então usa PUT, senão POST, pois é um novo registro.
-    let targetUrl = method === 'PUT' ? `${url}/${i_id}` : url;
+    let method = idPos.disabled ? 'PUT' : 'POST';
     try {
-        const response = await fetch(targetUrl, {
+        const response = await fetch(url, {
             method: method,
             headers: headers,
             body: data,
-        }).then(result => {                         // Se deu tudo ok
-            limpar();                               // limpa os campos e habilita o id
+        }).then(result => {                         // Se deu tudo ok                            // limpa os campos e habilita o id
             carregarDados();                        // e recarrega os dados da tabela
+            window.location.href = "explorar.html"
         });
     } catch (error) {
         alert("Error: " + error);
@@ -113,39 +94,76 @@ async function gravar() {
 async function excluir() {
 let id = idPostAberto
 if (!id) {
-        alert("Nenhum post selecionado para excluir.");
+        alert("Nenhum post selecionado para excluir, Erro de Id?");
         return;
     }
 
     try {
+                fecharpost();
         // Usamos o serviço chamando pelo ID
         const response = await fetch(`${url}/${id}`, {  // Excluimos pelo ID
             method: "DELETE",                           // chamamos a operação DELETE
             headers: headers,
         });
-        const result = await response.json();
-        fecharpost();
         carregarDados();
     } catch (error) {
         alert("Error: " + error);
     }
 }
 
-function editar() {
-    let id = idPostAberto; 
-    
-    if (!id) {
-        alert("Nenhum post selecionado para editar.");
+ async function editar() {
+
+    if (!idPostAberto) {
+
+        console.error("Nenhum post aberto para editar!");
+
         return;
+
     }
+    window.location.href = `criacaopost.html?id=${idPostAberto}`;
 
-    const postCompleto = todosOsPosts.find(p => p.idpos === id);
-
-    if (!postCompleto) {
-        alert("Erro ao encontrar os dados do post.");
-        return;
-    }
-
-    localStorage.setItem('postParaEditar', JSON.stringify(postCompleto));
-    window.location.href = 'criacaopost.html'; 
 }
+
+ async function carregarPostDaUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id'); 
+
+    if (id) {
+        alert("ID encontrado na URL: " + id);
+
+        let idpost = document.getElementById('idPos'); 
+        let titulodopost = document.getElementById('titulo');
+        let descricaodopost = document.getElementById('descricao');
+        let resolucaodopost = document.getElementById('resolucao');
+        let meiopost = document.getElementById('comuniOutros');
+
+        try {
+            alert("Buscando dados em: " + url + "/" + id);
+            
+            const response = await fetch(`${url}/${id}`, {
+                method: "GET",
+                headers: headers, 
+            });
+            
+            if (!response.ok) throw new Error("Erro HTTP: " + response.status);
+            
+            const post = await response.json(); 
+            alert("Dados recebidos do backend com sucesso!");
+            
+            if (idpost) {
+                idpost.value = post.idpos || post.idPos || id; 
+                idpost.disabled = true; 
+            }
+            if (titulodopost) titulodopost.value = post.titulo || "";
+            if (descricaodopost) descricaodopost.value = post.descricao || "";
+            if (resolucaodopost) resolucaodopost.value = post.resolucao || "";
+            if (meiopost) meiopost.value = post.comunioutros || post.comuniOutros || ""; 
+
+        } catch (error) {
+            alert("Erro ao buscar o post: " + error.message);
+        }
+    } else {
+        alert("Nenhum ID na URL. Modo de criação de post.");
+    }
+}
+carregarPostDaUrl();

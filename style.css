@@ -35,9 +35,9 @@ cursor: pointer;
 .cont-cabecalho { 
     background-color: var(--cor-principal);
     padding: 1em;
-    height: 10vh;
+    height: 4rem;
     width: 100vw;
-
+    z-index: 9999;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,7 +56,7 @@ cursor: pointer;
 }
 
 .login-cabecalho {
-    margin-left: 70em;
+    margin-left: auto;
     margin-right: 1em;
 }
 
@@ -67,15 +67,17 @@ cursor: pointer;
 
 .cont-footer{
     background-color: var(--cor-destaque-footer);
-    width: 100;
-    height: 5vh;
+    width: 100vw;
+    height: 3rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-top: auto;
 }
 
+
 .item-footer{
-    margin-right: 50px;
+    margin-right: 1rem;
 }
 
 

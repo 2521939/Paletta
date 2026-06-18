@@ -25,7 +25,7 @@
 
     <dialog id="modalPost" class="modal-de-post">
     
-    <section>
+    <section class="header-post">
         <h1 id="titulo">N/A</h2>
         <button id="fecharbtnpost" class="fecharbtn" onclick="fecharpost();">X</button>
     </section>
@@ -37,25 +37,26 @@
         </section>  
 
         <section class="campo-especificacao">
+            <h2>Especificações:</h2>
             <p id="tamanho">Tamanho: </p>
         </section>
 
-        <section>
+        <section class="campo-contato">
             <h2>Informações de Contato:</h2>
             <p id="comuniOutros">Contato: </p>
         </section>
 
-        <section>
-            <button onclick="editar();">Atualizar</button>
-            <button onclick="excluir();">Deletar</button>
+        <section class="botoes-crud">
+            <button class="atualizar" onclick="editar();">Atualizar</button>
+            <button class="deletar" onclick="excluir();">Deletar</button>
         </section>
 
     </section>
     </dialog>
 
 
-     <section class="icone-novo-post">
-        <a class="botao-novo-post" href="criacaopost.html">+</a>
+     <section>
+        <a class="botao-novo-post icone-novo-post" href="criacaopost.html">+</a>
      </section>
 </body>
 </html>
