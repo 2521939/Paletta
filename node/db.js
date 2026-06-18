@@ -4,7 +4,7 @@ host: 'localhost',
 database: 'postgres', // ajuste se necessário
 port: 5432,
 user: 'postgres', // ajuste se necessário
-password: 'aluno', // ajuste se necessário
+password: '110707', // ajuste se necessário
 ssl: false
 });
 pool.on('error', (err) => {

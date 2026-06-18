@@ -163,7 +163,7 @@ if (!id) {
             alert("Erro ao buscar o post: " + error.message);
         }
     } else {
-        alert("Nenhum ID na URL. Modo de criação de post.");
+        
     }
 }
 carregarPostDaUrl();
