@@ -46,10 +46,10 @@ app.get('/posts/:id', async (req, res) => {
 
 app.put('/posts/:id', async (req, res) => {
     const { id } = req.params;
-    const { name, email } = req.body;
+    const { titulo, descricao, resolucao, comuniOutros } = req.body;
 
     try {
-        const user = await usersRepository.updatePost(id, name, email);
+        const user = await usersRepository.updatePost(id, titulo, descricao, resolucao, comuniOutros);
 
         if (!user) {
             return res.status(404).json({ error: 'Post not found' });

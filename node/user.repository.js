@@ -36,8 +36,8 @@ class UsersRepository {
     }
 
     async updatePost(idPos, titulo, descricao, resolucao, comuniOutros) {
-        const query = 'UPDATE posts SET titulo = $1, descricao = $2, resolucao = $3, comuniOutros = $4 WHERE idPos = $5 RETURNING *';
-        const values = [titulo, descricao, resolucao, comuniOutros, idPos];
+        const query = 'UPDATE posts SET titulo = $2, descricao = $3, resolucao = $4, comuniOutros = $5 WHERE idPos = $1 RETURNING *';
+        const values = [idPos, titulo, descricao, resolucao, comuniOutros];
         try {
             const res = await pool.query(query, values);
             return res.rows[0];

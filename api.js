@@ -77,6 +77,9 @@ async function gravar() {
     // então usa PUT, senão POST, pois é um novo registro.
     let method = idPos.disabled ? 'PUT' : 'POST';
     try {
+        if (idPos.disabled) {
+            url = `${url}/${i_id}`;
+        }
         const response = await fetch(url, {
             method: method,
             headers: headers,
@@ -136,6 +139,7 @@ if (!id) {
         let descricaodopost = document.getElementById('descricao');
         let resolucaodopost = document.getElementById('resolucao');
         let meiopost = document.getElementById('comuniOutros');
+        let botaoput = document.getElementById('criarpostbtn')
 
         try {
             alert("Buscando dados em: " + url + "/" + id);
@@ -153,6 +157,9 @@ if (!id) {
             if (idpost) {
                 idpost.value = post.idpos || post.idPos || id; 
                 idpost.disabled = true; 
+                if (idpost.disabled) {
+                    botaoput.textContent = "Atualizar"; // Adicionei um textContent que supostamente é seguro em comparação a innerhtml
+                }
             }
             if (titulodopost) titulodopost.value = post.titulo || "";
             if (descricaodopost) descricaodopost.value = post.descricao || "";
@@ -163,7 +170,7 @@ if (!id) {
             alert("Erro ao buscar o post: " + error.message);
         }
     } else {
-        alert("Nenhum ID na URL. Modo de criação de post.");
+// Removi o alerta de post que aparecia, tenho q trocar o local das minhas funções e separar em arquivos diferentes :P
     }
 }
 carregarPostDaUrl();
